@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सुमन आचार्य ज्योतिष</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>सुमन आचार्य ज्योतिष</h1>
+  </header>
+  <main>
+    <section id="intro">
+      <p>अपनी जन्मतिथि एवं विवरण दर्ज करें और जानें अपना राशिफल!</p>
+      <form id="astroForm">
+        <label for="name">नाम:</label>
+        <input type="text" id="name" required>
+        <label for="dob">जन्मतिथि:</label>
+        <input type="date" id="dob" required>
+        <label for="place">जन्म स्थान:</label>
+        <input type="text" id="place" required>
+        <button type="submit">जाने अपनी राशि</button>
+      </form>
+    </section>
+    <section id="result" class="hidden">
+      <h2 id="greeting"></h2>
+      <p id="description"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 सुमन आचार्य</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
