@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="hgrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020024"/>
+      <stop offset="35%" stop-color="#090979"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#hgrad)"/>
+  <circle cx="300" cy="320" r="140" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.4)" stroke-width="4"/>
+  <text x="300" y="320" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="36" fill="#ffffff" font-weight="700">Mentor Sir</text>
+  <text x="300" y="370" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="18" fill="#d9f4ff">AI Mentor &amp; Motivational Educator</text>
+</svg>
