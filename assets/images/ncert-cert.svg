@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fefefe"/>
+      <stop offset="100%" stop-color="#d4e4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#grad)" stroke="#1b4aa8" stroke-width="6" rx="20"/>
+  <text x="200" y="70" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="20" fill="#1b4aa8" font-weight="700">NCERT Didac India 2024</text>
+  <text x="200" y="120" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="16" fill="#08305c">AI-Powered Learning Workshop</text>
+  <text x="200" y="160" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="18" fill="#000">Rahul Yadav</text>
+  <text x="200" y="200" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="12" fill="#08305c">Certificate Placeholder</text>
+</svg>

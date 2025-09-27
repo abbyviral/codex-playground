@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+  <defs>
+    <linearGradient id="igrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fffb"/>
+      <stop offset="100%" stop-color="#cdebd6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#igrad)" stroke="#1a6f43" stroke-width="6" rx="20"/>
+  <text x="200" y="70" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="20" fill="#1a6f43" font-weight="700">ISO 9001:2015</text>
+  <text x="200" y="120" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="16" fill="#1a6f43">The Mission Development Academy</text>
+  <text x="200" y="160" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="18" fill="#000">Quality Management</text>
+  <text x="200" y="200" text-anchor="middle" font-family="'Montserrat', Arial, sans-serif" font-size="12" fill="#1a6f43">Certificate Placeholder</text>
+</svg>
