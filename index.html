@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Mentor Sir — Mensuration Mastery (Class 9)</title>
+  <meta name="description" content="AI Mentor Sir Rahul Yadav guides Class 9 students through Mensuration with Hinglish explanations, interactive labs, quizzes, and printable resources.">
+  <meta property="og:title" content="AI Mentor Sir — Mensuration Mentor">
+  <meta property="og:description" content="Learn Mensuration for Class 9 with interactive diagrams, practice, and quizzes in friendly Hinglish by Rahul Yadav.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aimentor.local/offline">
+  <meta property="og:image" content="https://aimentor.local/offline/mentor-thumbnail.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #f9fafc;
+      --color-card: #ffffff;
+      --color-primary: #3956d3;
+      --color-secondary: #f6b85b;
+      --color-text: #1f2933;
+      --color-muted: #64748b;
+      --color-border: #d8e0f0;
+      --color-focus: #ff8800;
+      --shadow-soft: 0 10px 25px rgba(57, 86, 211, 0.08);
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 10px;
+      --transition-fast: 0.25s ease;
+      --transition-slow: 0.6s ease;
+      --font-display: 'Baloo 2', cursive;
+      --font-body: 'Inter', system-ui;
+      --max-width: 1200px;
+      --contrast-bg: #000000;
+      --contrast-text: #ffffff;
+      --contrast-card: #1a1a1a;
+      --contrast-border: #444444;
+    }
+
+    [data-theme="contrast"] {
+      --color-bg: var(--contrast-bg);
+      --color-card: var(--contrast-card);
+      --color-primary: #78d4ff;
+      --color-secondary: #ffe066;
+      --color-text: var(--contrast-text);
+      --color-muted: #f3f4f6;
+      --color-border: var(--contrast-border);
+      --shadow-soft: 0 0 0 rgba(0,0,0,0);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+      transition: background var(--transition-fast), color var(--transition-fast);
+    }
+
+    img, svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 2px;
+    }
+
+    .layout {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .card {
+      background: var(--color-card);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--color-border);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .card:hover,
+    .card:focus-within {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 30px rgba(57, 86, 211, 0.12);
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      margin: 0 0 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .sub-heading {
+      font-weight: 600;
+      margin-top: 1.5rem;
+      color: var(--color-primary);
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 0 0 0.75rem;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-sm);
+      background: rgba(57, 86, 211, 0.12);
+      color: var(--color-primary);
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-right: 0.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-sm);
+      border: none;
+      font-weight: 600;
+      background: var(--color-primary);
+      color: #fff;
+      box-shadow: var(--shadow-soft);
+      transition: transform var(--transition-fast), background var(--transition-fast);
+    }
+
+    .btn.secondary {
+      background: var(--color-secondary);
+      color: #2a2a2a;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn[aria-pressed="true"] {
+      box-shadow: inset 0 0 0 3px rgba(255,255,255,0.5);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      background: rgba(249, 250, 252, 0.9);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    [data-theme="contrast"] header {
+      background: rgba(0,0,0,0.9);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    .brand-tagline {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 0.5rem;
+    }
+
+    nav a {
+      padding: 0.4rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      white-space: nowrap;
+      border: 1px solid transparent;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: rgba(57, 86, 211, 0.1);
+      border-color: rgba(57, 86, 211, 0.3);
+    }
+
+    main {
+      padding: 4rem 0;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .hero {
+      display: grid;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 3vw + 1.5rem, 3.4rem);
+      margin: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 260px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, rgba(57,86,211,0.18), rgba(246,184,91,0.18));
+      padding: 2rem;
+      overflow: hidden;
+    }
+
+    .hero-visual svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+    }
+
+    .hero-visual .caption {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      font-size: 0.85rem;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 0.4rem 0.7rem;
+      border-radius: var(--radius-sm);
+    }
+
+    @media (min-width: 900px) {
+      .hero {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 780px) {
+      .grid.columns-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .grid.columns-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .formula-box {
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      background: rgba(57, 86, 211, 0.08);
+      border: 1px dashed var(--color-primary);
+      margin: 0.75rem 0;
+    }
+
+    .formula-box code {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 0.95rem;
+    }
+
+    .table-like {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .table-like div {
+      background: rgba(0,0,0,0.02);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem;
+    }
+
+    .diagram-area {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .diagram-canvas {
+      width: 100%;
+      min-height: 260px;
+      border-radius: var(--radius-md);
+      background: #eef2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    [data-theme="contrast"] .diagram-canvas {
+      background: #111827;
+    }
+
+    .diagram-canvas svg {
+      width: 90%;
+      max-width: 360px;
+    }
+
+    .diagram-label {
+      font-size: 0.85rem;
+      fill: var(--color-text);
+      pointer-events: none;
+    }
+
+    .control-group {
+      display: grid;
+      gap: 0.5rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .control-group label {
+      font-weight: 600;
+    }
+
+    input[type="range"] {
+      accent-color: var(--color-primary);
+    }
+
+    .unit-toggle {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .highlight {
+      background: rgba(246, 184, 91, 0.18);
+      padding: 0.4rem 0.7rem;
+      border-radius: var(--radius-sm);
+      border-left: 4px solid var(--color-secondary);
+    }
+
+    .labs-panels {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 960px) {
+      .labs-panels {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: start;
+      }
+    }
+
+    .steps {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .step {
+      border-left: 4px solid var(--color-primary);
+      padding-left: 1rem;
+      background: rgba(57, 86, 211, 0.06);
+      border-radius: var(--radius-sm);
+    }
+
+    .quiz-card {
+      border: 2px dashed rgba(57, 86, 211, 0.2);
+      padding: 1.25rem;
+      border-radius: var(--radius-md);
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .quiz-options button {
+      text-align: left;
+      border: 1px solid var(--color-border);
+      background: var(--color-card);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem;
+    }
+
+    .quiz-options button.correct {
+      border-color: #16a34a;
+      background: rgba(22, 163, 74, 0.12);
+    }
+
+    .quiz-options button.incorrect {
+      border-color: #dc2626;
+      background: rgba(220, 38, 38, 0.12);
+    }
+
+    .badge-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .badge {
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--color-border);
+      text-align: center;
+      background: rgba(57, 86, 211, 0.04);
+    }
+
+    .certificate-area {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    canvas.certificate {
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background: #fffef5;
+      max-width: 100%;
+    }
+
+    .toggle-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .switch input {
+      width: 42px;
+      height: 22px;
+    }
+
+    .caption {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    body.reduced-motion * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+
+    .pizza-slice {
+      transform-origin: center;
+      animation: spinSlices 8s linear infinite;
+    }
+
+    body.reduced-motion .pizza-slice {
+      animation: none;
+    }
+
+    @keyframes spinSlices {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .net {
+      transition: transform var(--transition-slow);
+    }
+
+    .net.unrolled {
+      transform: rotateX(0deg) scale(1);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.04);
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+
+    @media print {
+      header, nav, .hero-actions, .toggle-row, .interactive-only, .btn, footer {
+        display: none !important;
+      }
+      body {
+        background: #ffffff !important;
+        color: #000 !important;
+        font-size: 12pt;
+      }
+      .card {
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+      }
+      .formula-box {
+        background: #f1f5f9 !important;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalCourse",
+    "name": "Mensuration Mastery for Class 9",
+    "description": "Interactive mensuration course with diagrams, quizzes, and real-life applications for Indian Class 9 students in Hinglish.",
+    "educationalLevel": "Class 9",
+    "provider": {
+      "@type": "Person",
+      "name": "Rahul Yadav",
+      "alternateName": "AI Mentor Sir",
+      "jobTitle": "Mathematics Educator",
+      "url": "https://aimentor.local"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="sr-only" href="#hero">Skip to content</a>
+  <header>
+    <div class="header-inner layout" role="banner">
+      <div class="brand">
+        <strong class="brand-title">AI Mentor Sir — Rahul Yadav</strong>
+        <span class="brand-tagline">Class 9 Mensuration Guru | Hinglish mein easy maths breakdowns.<br>Interactive labs, quick tricks, aur full confidence boost!</span>
+      </div>
+      <div class="toggle-row" aria-label="Display preferences">
+        <label class="switch">
+          <input type="checkbox" id="contrastToggle" aria-pressed="false">
+          <span>High Contrast</span>
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="motionToggle" aria-pressed="false">
+          <span>Reduce Motion</span>
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="voiceToggle" aria-pressed="false">
+          <span>Voice Assist</span>
+        </label>
+      </div>
+    </div>
+    <nav aria-label="Primary" class="layout">
+      <a href="#hero">Hero</a>
+      <a href="#topics">Topics Overview</a>
+      <a href="#plane">Plane Figures</a>
+      <a href="#solids">3D Solids</a>
+      <a href="#labs">Interactive Labs</a>
+      <a href="#practice">Practice Zone</a>
+      <a href="#quizzes">Quizzes</a>
+      <a href="#applications">Real-Life Applications</a>
+      <a href="#formula">Formula Sheet</a>
+      <a href="#teachers">Teacher's Corner</a>
+      <a href="#badges">Badges & Progress</a>
+      <a href="#help">Help & Doubts</a>
+    </nav>
+  </header>
+  <main>
+    <section id="hero" class="layout hero" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title" class="hero-title">Mensuration Mastery — Class 9 ko banaao mast easy!</h1>
+        <p>Mere saath, Rahul Yadav aka <strong>AI Mentor Sir</strong>, tum seekhoge plane figures aur 3D solids ka poora funda. Hinglish explanations, live diagrams, aur exam-ready practice ek hi jagah.</p>
+        <div class="hero-actions">
+          <button class="btn" id="startPractice">Abhi Practice Karo</button>
+          <button class="btn secondary" id="printFormula">Formula Sheet Print karo</button>
+          <button class="btn" id="dailyChallenge">Daily Challenge Try karo</button>
+        </div>
+      </div>
+      <div class="hero-visual" role="presentation">
+        <svg viewBox="0 0 400 280" aria-hidden="true">
+          <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#3956d3" stop-opacity="0.3"></stop>
+              <stop offset="100%" stop-color="#f6b85b" stop-opacity="0.4"></stop>
+            </linearGradient>
+          </defs>
+          <rect x="50" y="40" width="140" height="100" rx="18" fill="url(#grad)"></rect>
+          <circle cx="280" cy="90" r="60" fill="none" stroke="#3956d3" stroke-width="6"></circle>
+          <g class="pizza-slice" stroke="#f6b85b" stroke-width="10" stroke-linecap="round">
+            <path d="M280 90 L340 90 A60 60 0 0 1 280 150 Z" fill="rgba(246,184,91,0.35)"></path>
+            <path d="M280 90 L280 30"></path>
+            <path d="M280 90 L330 46"></path>
+          </g>
+          <text x="60" y="170" fill="#3956d3" font-size="18">Area = l × b</text>
+          <text x="220" y="200" fill="#1f2933" font-size="16">Volume = base area × height</text>
+        </svg>
+        <span class="caption">SVG diagrams ready to move with tumhare inputs.</span>
+      </div>
+    </section>
+    <section id="topics" class="layout" aria-labelledby="topics-title">
+      <h2 id="topics-title" class="section-title">Topics Overview</h2>
+      <div class="card">
+        <p>Yahan tum jaanoge kya-kya cover kar rahe hain. Sab kuch bite-sized Hinglish mein.</p>
+        <div class="grid columns-2">
+          <div>
+            <h3 class="sub-heading">Plane Figures</h3>
+            <ul>
+              <li><strong>Square</strong> (title="वर्ग") — area ka shortcut, perimeter recap.</li>
+              <li><strong>Rectangle</strong> (title="आयत") — classroom ke boards se relate.</li>
+              <li><strong>Triangle</strong> — height aur <span title="हेरॉन सूत्र">Heron's</span> formula donon.</li>
+              <li><strong>Parallelogram</strong> — base × height logic.</li>
+              <li><strong>Trapezium</strong> (title="समलम्ब") — average of parallel sides.</li>
+              <li><strong>Circle</strong> — π ≈ 3.14 se pizza slice animation.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="sub-heading">3D Solids</h3>
+            <ul>
+              <li><strong>Cube</strong> — Rubik's cube vibes.</li>
+              <li><strong>Cuboid</strong> — pencil box sizing.</li>
+              <li><strong>Cylinder</strong> — water tank aur Pringles ka logic.</li>
+            </ul>
+            <p class="highlight">Har topic ke saath live diagrams, stepwise solvers, aur practice set ready hai.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="plane" class="layout" aria-labelledby="plane-title">
+      <h2 id="plane-title" class="section-title">Plane Figures (Area)</h2>
+      <div class="grid columns-2">
+        <article class="card" aria-labelledby="square-title">
+          <h3 id="square-title">Square (Square = a²)</h3>
+          <p>Ek square mein sab sides equal. Area milta hai side × side. Exam mein units pe dhyaan rakho!</p>
+          <div class="formula-box"><code>A = a²</code></div>
+          <div class="table-like">
+            <div><strong>Example:</strong> Side = 6 cm ⇒ A = 36 cm²</div>
+            <div><strong>Mistake alert:</strong> Perimeter formula (4a) ko area samajh ke apply mat karna.</div>
+          </div>
+          <div class="sub-heading">Sample Problems</div>
+          <ol>
+            <li>Side 12 cm ka square ka area? (144 cm²)</li>
+            <li>Class board 1.2 m side — kitna paint chahiye agar 1 litre = 10 m² cover kare?</li>
+          </ol>
+          <button class="btn secondary interactive-only" data-shape="square">Live demo kholo</button>
+        </article>
+        <article class="card" aria-labelledby="rectangle-title">
+          <h3 id="rectangle-title">Rectangle (Area = l × b)</h3>
+          <p>Length aur breadth alag ho sakte. Area simple multiplication hai. Formula revise karo jab bhi desks measure karo.</p>
+          <div class="formula-box"><code>A = l × b</code></div>
+          <div class="table-like">
+            <div><strong>Example:</strong> 8 cm × 5 cm ⇒ 40 cm²</div>
+            <div><strong>Common doubt:</strong> Diagonal nahi chahiye area ke liye.</div>
+          </div>
+          <div class="sub-heading">Sample Problems</div>
+          <ol>
+            <li>Garden 20 m × 15 m ka area aur fencing length find karo.</li>
+            <li>Notebook cover 18 cm × 12 cm, plastic sheet kitna area cover karega?</li>
+          </ol>
+          <button class="btn secondary interactive-only" data-shape="rectangle">Live demo kholo</button>
+        </article>
+        <article class="card" aria-labelledby="triangle-title">
+          <h3 id="triangle-title">Triangle (½ × b × h &amp; Heron)</h3>
+          <p>Triangle ka area base aur height se ya phir Heron's se jab sides pata ho. <span title="अर्ध परिमाप">Semi-perimeter</span> s ka dhyaan rakho.</p>
+          <div class="formula-box"><code>A = ½ × b × h<br>s = (a + b + c)/2<br>A = √(s(s-a)(s-b)(s-c))</code></div>
+          <div class="table-like">
+            <div><strong>Example:</strong> b = 12 cm, h = 7 cm ⇒ A = 42 cm²</div>
+            <div><strong>Tip:</strong> Height hamesha base par perpendicular hoti hai.</div>
+          </div>
+          <div class="sub-heading">Sample Problems</div>
+          <ol>
+            <li>Sides 13 cm, 14 cm, 15 cm ⇒ area? (Use Heron)</li>
+            <li>Triangle base 20 cm, area 90 cm² ⇒ height?</li>
+          </ol>
+          <button class="btn secondary interactive-only" data-shape="triangle">Live demo kholo</button>
+        </article>
+        <article class="card" aria-labelledby="para-title">
+          <h3 id="para-title">Parallelogram (Area = b × h)</h3>
+          <p>Opposite sides parallel. Area bas base aur perpendicular height se decide hota.</p>
+          <div class="formula-box"><code>A = b × h</code></div>
+          <div class="table-like">
+            <div>Example: b = 10 cm, h = 6 cm ⇒ 60 cm²</div>
+            <div>Mistake: Slant side ko height mat samjho.</div>
+          </div>
+          <ol>
+            <li>Base 18 cm, area 108 cm² ⇒ height?</li>
+            <li>Parallelogram formed by vectors, base double hone par area?</li>
+          </ol>
+          <button class="btn secondary interactive-only" data-shape="parallelogram">Live demo kholo</button>
+        </article>
+        <article class="card" aria-labelledby="trap-title">
+          <h3 id="trap-title">Trapezium (Average of parallel sides)</h3>
+          <p>Do parallel sides a aur b ka average leke height se multiply karo.</p>
+          <div class="formula-box"><code>A = ½ × (a + b) × h</code></div>
+          <div class="table-like">
+            <div>Example: a=10 cm, b=6 cm, h=5 cm ⇒ 40 cm²</div>
+            <div>Tip: Parallel sides ka difference confuse mat kare.</div>
+          </div>
+          <ol>
+            <li>Field boundary shaped trapezium: find area.</li>
+            <li>Find missing parallel side when area aur height given.</li>
+          </ol>
+          <button class="btn secondary interactive-only" data-shape="trapezium">Live demo kholo</button>
+        </article>
+        <article class="card" aria-labelledby="circle-title">
+          <h3 id="circle-title">Circle (Area = πr²)</h3>
+          <p>Circle ko pizza ki tarah slices mein cut karo, rectangle ban jaata — isi se area samjho.</p>
+          <div class="formula-box"><code>A = πr², π ≈ 3.14</code></div>
+          <div class="table-like">
+            <div>Example: r = 7 cm ⇒ A ≈ 153.86 cm²</div>
+            <div>Common mistake: Diameter ko radius mat samjho. Radius half hota hai.</div>
+          </div>
+          <ol>
+            <li>Wheel radius 0.35 m ⇒ area?</li>
+            <li>Find radius if area 201 cm².</li>
+          </ol>
+          <button class="btn secondary interactive-only" data-shape="circle">Live demo kholo</button>
+        </article>
+      </div>
+    </section>
+    <section id="solids" class="layout" aria-labelledby="solids-title">
+      <h2 id="solids-title" class="section-title">3D Solids (Surface Area &amp; Volume)</h2>
+      <div class="grid columns-3">
+        <article class="card" aria-labelledby="cube-title">
+          <h3 id="cube-title">Cube</h3>
+          <p>Rubik's cube jaisa. Sab edges same.</p>
+          <div class="formula-box"><code>TSA = 6a²<br>LSA = 4a²<br>Volume = a³</code></div>
+          <p>Example: a = 5 cm ⇒ TSA = 150 cm², V = 125 cm³</p>
+          <button class="btn secondary interactive-only" data-shape="cube">Live net dekho</button>
+        </article>
+        <article class="card" aria-labelledby="cuboid-title">
+          <h3 id="cuboid-title">Cuboid</h3>
+          <p>Pencil box ya book box jaisa.</p>
+          <div class="formula-box"><code>TSA = 2(lb + bh + hl)<br>LSA = 2h(l + b)<br>V = lbh</code></div>
+          <p>Example: 4 × 3 × 2 cm ⇒ TSA = 52 cm², V = 24 cm³</p>
+          <button class="btn secondary interactive-only" data-shape="cuboid">Dimensions adjust karo</button>
+        </article>
+        <article class="card" aria-labelledby="cylinder-title">
+          <h3 id="cylinder-title">Cylinder</h3>
+          <p>Water tank, batteries, dabbas — sab cylinder type.</p>
+          <div class="formula-box"><code>CSA = 2πrh<br>TSA = 2πrh + 2πr²<br>Volume = πr²h</code></div>
+          <p>Example: r = 3 cm, h = 10 cm ⇒ CSA ≈ 188.4 cm², V ≈ 282.6 cm³</p>
+          <button class="btn secondary interactive-only" data-shape="cylinder">Unroll animation</button>
+        </article>
+      </div>
+    </section>
+    <section id="labs" class="layout" aria-labelledby="labs-title">
+      <h2 id="labs-title" class="section-title">Interactive Labs</h2>
+      <div class="card">
+        <p>Dimensions ko sliders se change karo aur turant area/volume values dekho. Units switcher bhi hai — cm se m aur back.</p>
+        <div class="labs-panels">
+          <div class="diagram-area">
+            <label for="shapeSelect" class="sub-heading">Shape choose karo:</label>
+            <select id="shapeSelect" aria-describedby="shapeHelp">
+              <option value="square">Square</option>
+              <option value="rectangle">Rectangle</option>
+              <option value="triangle">Triangle</option>
+              <option value="parallelogram">Parallelogram</option>
+              <option value="trapezium">Trapezium</option>
+              <option value="circle">Circle</option>
+              <option value="cube">Cube</option>
+              <option value="cuboid">Cuboid</option>
+              <option value="cylinder">Cylinder</option>
+            </select>
+            <p id="shapeHelp" class="caption">Har shape ke liye sliders neeche show honge. Koi value galat hui toh error message aayega.</p>
+            <div class="unit-toggle" role="group" aria-label="Unit selector">
+              <label><input type="radio" name="unit" value="cm" checked> Centimetre (cm)</label>
+              <label><input type="radio" name="unit" value="m"> Metre (m)</label>
+            </div>
+            <div id="dimensionControls" aria-live="polite"></div>
+            <div class="diagram-canvas" aria-live="polite" aria-label="Dynamic figure diagram">
+              <svg viewBox="0 0 300 260" role="img" aria-labelledby="diagramTitle">
+                <title id="diagramTitle">Mensuration Diagram</title>
+                <g id="svgShapes"></g>
+              </svg>
+            </div>
+            <div id="calculationOutput" class="highlight" aria-live="polite"></div>
+            <div id="errorOutput" role="alert" style="color:#dc2626;font-weight:600;"></div>
+          </div>
+          <div>
+            <h3 class="sub-heading">Intuition Animations</h3>
+            <div class="card" style="padding:1rem;">
+              <h4>Circle → Rectangle rearrangement</h4>
+              <svg viewBox="0 0 220 160" aria-labelledby="circleAnimTitle">
+                <title id="circleAnimTitle">Circle to rectangle animation</title>
+                <g>
+                  <circle cx="70" cy="80" r="50" fill="#fde68a" stroke="#f59e0b" stroke-width="4"></circle>
+                  <g class="pizza-slice" aria-hidden="true">
+                    <path d="M70 80 L120 80 A50 50 0 0 1 70 130 Z" fill="#f59e0b" opacity="0.4"></path>
+                  </g>
+                  <rect x="140" y="40" width="60" height="80" rx="8" fill="#bfdbfe" stroke="#2563eb" stroke-width="3"></rect>
+                </g>
+              </svg>
+              <p class="caption">Play/Pause buttons circle ke slices ko rectangle shape mein imagine karne ke liye.</p>
+              <button class="btn" id="toggleCircleAnim">Pause karo</button>
+              <figcaption class="caption">Animation dikhata hai kyun area πr² hota hai.</figcaption>
+            </div>
+            <div class="card" style="padding:1rem;">
+              <h4>Cylinder net unroll</h4>
+              <svg viewBox="0 0 220 160" aria-labelledby="cylinderAnimTitle">
+                <title id="cylinderAnimTitle">Cylinder net</title>
+                <g id="cylinderNet" class="net" style="transform: rotateX(75deg) scale(0.9); transform-origin: top;">
+                  <rect x="40" y="20" width="140" height="70" fill="#c7d2fe" stroke="#4338ca" stroke-dasharray="6" stroke-width="3"></rect>
+                  <circle cx="70" cy="115" r="30" fill="#fde68a" stroke="#f59e0b" stroke-width="3"></circle>
+                  <circle cx="150" cy="115" r="30" fill="#fde68a" stroke="#f59e0b" stroke-width="3"></circle>
+                </g>
+              </svg>
+              <button class="btn" id="toggleNet">Unroll karo</button>
+              <p class="caption">Cylinder ke curved surface ko rectangle banane ka magic.</p>
+            </div>
+            <div class="card" style="padding:1rem;">
+              <h4>Cube &amp; Cuboid faces</h4>
+              <div class="toggle-row" role="group" aria-label="Cube face toggle">
+                <button class="btn secondary" id="toggleCubeFaces">Faces Highlight karo</button>
+              </div>
+              <svg viewBox="0 0 220 160" aria-labelledby="cubeAnimTitle">
+                <title id="cubeAnimTitle">Cube net</title>
+                <g id="cubeNet" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2">
+                  <rect x="80" y="20" width="60" height="60"></rect>
+                  <rect x="20" y="80" width="60" height="60" class="face" data-face="1"></rect>
+                  <rect x="80" y="80" width="60" height="60" class="face" data-face="2"></rect>
+                  <rect x="140" y="80" width="60" height="60" class="face" data-face="3"></rect>
+                  <rect x="80" y="140" width="60" height="60" class="face" data-face="4"></rect>
+                  <rect x="140" y="20" width="60" height="60" class="face" data-face="5"></rect>
+                </g>
+              </svg>
+              <figcaption class="caption">Faces same size kaise hote hain? Colors se compare karo.</figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="practice" class="layout" aria-labelledby="practice-title">
+      <h2 id="practice-title" class="section-title">Practice Zone</h2>
+      <div class="card">
+        <p>Stepwise solver tumhe bataega kaise approach karna hai. Hint chahiye toh shortcut keys: <strong>H</strong> for Hint, <strong>N</strong> for next step, <strong>R</strong> for reset.</p>
+        <div class="steps">
+          <div class="step" id="step1"><strong>Step 1 (Given):</strong> <span id="givenInfo">Select a problem niche se.</span></div>
+          <div class="step" id="step2" title="Formula ko 14 saal ke dost ki tarah simple samjho."><strong>Step 2 (Formula):</strong> <span id="formulaInfo">Formula yahan show hoga.</span></div>
+          <div class="step" id="step3"><strong>Step 3 (Calculation):</strong> <span id="calculationInfo">Calculation breakdown.</span></div>
+        </div>
+        <div class="toggle-row" style="margin-top:1.5rem;">
+          <select id="problemSelect" aria-label="Practice problem select"></select>
+          <button class="btn" id="showHint" title="मदद चाहिए?">Hint</button>
+          <button class="btn" id="nextStep">Next Step</button>
+          <button class="btn secondary" id="resetSteps">Reset</button>
+        </div>
+        <p class="caption">Explain Like I'm 14: Hover karo formula pe for Hinglish tooltip.</p>
+        <p id="hintOutput" class="highlight" aria-live="polite"></p>
+      </div>
+      <div class="card">
+        <h3 class="sub-heading">Random Problem Generator</h3>
+        <div class="toggle-row">
+          <label>Difficulty:
+            <select id="difficultySelect">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </label>
+          <label>Timer:
+            <select id="timerSelect">
+              <option value="off">Off</option>
+              <option value="60">60s</option>
+              <option value="120">120s</option>
+            </select>
+          </label>
+          <button class="btn" id="generateProblem">Generate karo</button>
+        </div>
+        <div id="randomProblem" class="highlight" aria-live="polite"></div>
+        <div id="timerDisplay" class="caption" aria-live="polite"></div>
+        <div class="toggle-row" style="margin-top:1rem;">
+          <button class="btn" id="markSolved">Solved!</button>
+          <button class="btn secondary" id="skipProblem">Skip</button>
+        </div>
+        <p class="caption">Streak: <span id="streakCount">0</span> | Accuracy: <span id="accuracyPercent">0%</span> | Skill level: <span id="skillLevel">Rising Star</span> | Best time: <span id="bestTime">--</span>s</p>
+      </div>
+    </section>
+    <section id="quizzes" class="layout" aria-labelledby="quizzes-title">
+      <h2 id="quizzes-title" class="section-title">Quizzes &amp; Challenges</h2>
+      <div class="grid columns-2">
+        <div class="quiz-card" aria-live="polite">
+          <h3>Quick Quiz</h3>
+          <p id="quizQuestion">Ready ho?</p>
+          <div class="quiz-options" id="quizOptions"></div>
+          <button class="btn" id="nextQuiz">Next Question</button>
+        </div>
+        <div class="quiz-card">
+          <h3>Daily Challenge (5 Questions)</h3>
+          <p>4/5 ya 5/5 score pe digital badge unlock. Daily streak maintain karo.</p>
+          <button class="btn" id="startDaily">Start Challenge</button>
+          <p class="caption">Last score: <span id="dailyScore">0</span> | Streak: <span id="dailyStreak">0</span></p>
+          <div id="dailyStatus" class="highlight"></div>
+        </div>
+      </div>
+    </section>
+    <section id="applications" class="layout" aria-labelledby="app-title">
+      <h2 id="app-title" class="section-title">Real-Life Applications</h2>
+      <div class="grid columns-2">
+        <div class="card">
+          <h3>Paint Calculator (Room)</h3>
+          <p>Walls aur ceiling ka total area. Doors/windows ko minus karo.</p>
+          <label>Room Length (m): <input type="number" id="roomLength" min="1" value="4"></label>
+          <label>Room Breadth (m): <input type="number" id="roomBreadth" min="1" value="3"></label>
+          <label>Room Height (m): <input type="number" id="roomHeight" min="1" value="3"></label>
+          <label><input type="checkbox" id="includeDoor" checked> Door (2 × 0.9 m)</label>
+          <label><input type="checkbox" id="includeWindow" checked> Window (1.2 × 1.2 m)</label>
+          <button class="btn" id="calcPaint">Calculate Paint Area</button>
+          <p id="paintResult" class="highlight"></p>
+        </div>
+        <div class="card">
+          <h3>Cylinder Tank Fill</h3>
+          <label>Radius (m): <input type="number" id="tankRadius" min="0.1" step="0.1" value="1.2"></label>
+          <label>Height (m): <input type="number" id="tankHeight" min="0.5" step="0.1" value="2.5"></label>
+          <label>Fill %: <input type="range" id="tankFill" min="0" max="100" value="60"></label>
+          <p id="tankResult" class="highlight"></p>
+          <p class="caption">Overflow warning aayega agar value limit cross kare.</p>
+        </div>
+        <div class="card">
+          <h3>Label Wrap</h3>
+          <label>Bottle radius (cm): <input type="number" id="bottleRadius" min="1" value="3"></label>
+          <label>Label height (cm): <input type="number" id="labelHeight" min="1" value="10"></label>
+          <button class="btn" id="calcLabel">Label size find karo</button>
+          <p id="labelResult" class="highlight"></p>
+        </div>
+        <div class="card">
+          <h3>Packaging Cubes</h3>
+          <label>Box L × B × H (cm):
+            <input type="number" id="packL" value="30"> ×
+            <input type="number" id="packB" value="20"> ×
+            <input type="number" id="packH" value="15">
+          </label>
+          <label>Small cube side (cm): <input type="number" id="cubeSide" value="5"></label>
+          <button class="btn" id="calcPacking">Fit count nikaalo</button>
+          <p id="packingResult" class="highlight"></p>
+        </div>
+      </div>
+    </section>
+    <section id="formula" class="layout" aria-labelledby="formula-title">
+      <h2 id="formula-title" class="section-title">Formula Sheet</h2>
+      <div class="card">
+        <p>Printable quick reference. Download guidance: <kbd>Ctrl + P</kbd> ya mobile pe share menu se “Print/PDF”.</p>
+        <div class="grid columns-2">
+          <div>
+            <h3>Plane Figures</h3>
+            <ul>
+              <li>Square: A = a²</li>
+              <li>Rectangle: A = l × b</li>
+              <li>Triangle: A = ½ × b × h, Heron: √(s(s-a)(s-b)(s-c))</li>
+              <li>Parallelogram: A = b × h</li>
+              <li>Trapezium: A = ½ × (a + b) × h</li>
+              <li>Circle: A = πr²</li>
+            </ul>
+          </div>
+          <div>
+            <h3>3D Solids</h3>
+            <ul>
+              <li>Cube: TSA = 6a², LSA = 4a², V = a³</li>
+              <li>Cuboid: TSA = 2(lb + bh + hl), LSA = 2h(l + b), V = lbh</li>
+              <li>Cylinder: CSA = 2πrh, TSA = 2πrh + 2πr², V = πr²h</li>
+            </ul>
+          </div>
+        </div>
+        <p class="caption">Units tip: 1 m = 100 cm, so 1 m² = 10,000 cm², 1 m³ = 1,000,000 cm³.</p>
+      </div>
+    </section>
+    <section id="teachers" class="layout" aria-labelledby="teachers-title">
+      <h2 id="teachers-title" class="section-title">Teacher's Corner</h2>
+      <div class="card">
+        <h3>Classroom Tips</h3>
+        <ul>
+          <li>Starter: Let students estimate board area then verify.</li>
+          <li>Group activity: Cylinder net cut-outs for practical understanding.</li>
+          <li>Assessment: Use Daily Challenge as quick exit ticket.</li>
+        </ul>
+        <h3>Downloadable Class Plan</h3>
+        <p>Lesson plan print karne ke liye <button class="btn secondary" id="printPlan">Print Class Plan</button></p>
+        <p class="caption">Print CSS ensure karta hai nav aur animations hide ho jaye.</p>
+      </div>
+    </section>
+    <section id="badges" class="layout" aria-labelledby="badges-title">
+      <h2 id="badges-title" class="section-title">Badges &amp; Progress</h2>
+      <div class="card">
+        <label>Student Name: <input type="text" id="studentName" placeholder="Tumhara naam"></label>
+        <label>Class: <input type="text" id="studentClass" placeholder="9A"></label>
+        <button class="btn" id="saveProfile">Save Profile</button>
+        <button class="btn secondary" id="resetProgress">Reset Progress</button>
+        <p class="caption">Data localStorage mein save hota hai. Page reload ke baad bhi safe.</p>
+        <div class="badge-grid" aria-live="polite">
+          <div class="badge" id="badgePractice">Practice Pro</div>
+          <div class="badge" id="badgeDaily">Daily Challenger</div>
+          <div class="badge" id="badgeAllStar">All Topics Champ</div>
+          <div class="badge" id="badgeEaster" aria-hidden="true">Weekly Legend 🐣</div>
+        </div>
+        <div class="certificate-area">
+          <canvas id="certificateCanvas" class="certificate" width="800" height="600" role="img" aria-label="Certificate canvas"></canvas>
+          <button class="btn" id="exportCertificate">Download Certificate PNG</button>
+          <p class="caption">Certificate mein tumhara naam, date aur best score auto fill hoga.</p>
+        </div>
+      </div>
+    </section>
+    <section id="help" class="layout" aria-labelledby="help-title">
+      <h2 id="help-title" class="section-title">Help &amp; Doubts</h2>
+      <div class="card">
+        <p>Confused? Quick notes padho ya mujhe WhatsApp template bhejo.</p>
+        <ul>
+          <li>Remember: Always attach units. cm² area ke liye, cm³ volume ke liye.</li>
+          <li>Check conversions before final answer. Galat conversion se marks kat te hain.</li>
+          <li>Practice Heron's problems weekly. Boards mein frequently aata.</li>
+        </ul>
+        <textarea id="doubtTemplate" rows="4" aria-label="WhatsApp template">Hi AI Mentor Sir, mujhe Mensuration mein help chahiye. Topic: [topic] Problem: [problem details]. Mera attempt: [steps].</textarea>
+        <button class="btn" id="copyTemplate">Copy WhatsApp Text</button>
+        <p id="copyStatus" class="caption" role="status"></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Credits: Rahul Yadav (AI Mentor Sir) • Designed &amp; coded with pyaar for Class 9 | Version 1.0 • Last updated: <span id="lastUpdated"></span></p>
+  </footer>
+  <script>
+    const PI = 3.14;
+    const CM_TO_M = 0.01;
+    const M_TO_CM = 100;
+
+    const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+    const formatNumber = (num) => {
+      if (!Number.isFinite(num)) return '—';
+      return parseFloat(num.toFixed(2)).toString();
+    };
+
+    const voiceAssist = (() => {
+      const toggle = document.getElementById('voiceToggle');
+      const storageKey = 'aimentor-voice';
+      let enabled = false;
+
+      const update = () => {
+        enabled = toggle.checked && 'speechSynthesis' in window;
+        toggle.setAttribute('aria-pressed', toggle.checked);
+        if (!('speechSynthesis' in window)) {
+          toggle.disabled = true;
+          toggle.nextElementSibling.textContent = 'Voice N/A';
+        }
+      };
+
+      toggle.addEventListener('change', () => {
+        enabled = toggle.checked;
+        try {
+          localStorage.setItem(storageKey, JSON.stringify({ enabled }));
+        } catch (error) {
+          console.warn(error);
+        }
+        update();
+      });
+
+      const load = () => {
+        try {
+          const saved = JSON.parse(localStorage.getItem(storageKey));
+          if (saved && saved.enabled) toggle.checked = true;
+        } catch (error) {
+          console.warn(error);
+        }
+        update();
+      };
+
+      const isEnabled = () => enabled;
+
+      return { load, isEnabled };
+    })();
+
+    const speak = (text) => {
+      if (!window.SpeechSynthesisUtterance || !window.speechSynthesis || !voiceAssist.isEnabled()) return;
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-IN';
+      utterance.rate = 1;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utterance);
+    };
+
+    const preferences = (() => {
+      const contrastToggle = document.getElementById('contrastToggle');
+      const motionToggle = document.getElementById('motionToggle');
+      const storageKey = 'aimentor-preferences';
+
+      const loadPreferences = () => {
+        try {
+          const saved = JSON.parse(localStorage.getItem(storageKey));
+          if (saved) {
+            if (saved.contrast) document.body.dataset.theme = 'contrast';
+            contrastToggle.checked = !!saved.contrast;
+            if (saved.motion) document.body.classList.add('reduced-motion');
+            motionToggle.checked = !!saved.motion;
+          }
+        } catch (error) {
+          console.warn('Preference load error', error);
+        }
+      };
+
+      const savePreferences = () => {
+        const data = {
+          contrast: contrastToggle.checked,
+          motion: motionToggle.checked
+        };
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(data));
+        } catch (error) {
+          console.warn('Preference save error', error);
+        }
+      };
+
+      contrastToggle.addEventListener('change', () => {
+        document.body.dataset.theme = contrastToggle.checked ? 'contrast' : '';
+        contrastToggle.setAttribute('aria-pressed', contrastToggle.checked);
+        savePreferences();
+      });
+
+      motionToggle.addEventListener('change', () => {
+        document.body.classList.toggle('reduced-motion', motionToggle.checked);
+        motionToggle.setAttribute('aria-pressed', motionToggle.checked);
+        savePreferences();
+      });
+
+      return { loadPreferences };
+    })();
+
+    const diagramModule = (() => {
+      const svgGroup = document.getElementById('svgShapes');
+      const controls = document.getElementById('dimensionControls');
+      const output = document.getElementById('calculationOutput');
+      const errorOutput = document.getElementById('errorOutput');
+      const shapeSelect = document.getElementById('shapeSelect');
+      const unitRadios = document.querySelectorAll('input[name="unit"]');
+
+      let currentShape = 'square';
+      let currentUnit = 'cm';
+      let valueStore = {};
+
+      const setDefaults = (shape) => {
+        const config = shapeConfigs[shape];
+        valueStore = {};
+        config.fields.forEach((field) => {
+          valueStore[field.name] = field.value;
+        });
+      };
+
+      const formatLength = (base) => formatNumber(currentUnit === 'cm' ? base : base * CM_TO_M);
+
+      const shapeConfigs = {
+        square: {
+          fields: [{ name: 'a', label: 'Side', min: 1, max: 50, value: 8 }],
+          compute: ({ a }) => ({ area: a * a }),
+          draw: (data) => {
+            const size = 160;
+            return `<rect x="70" y="60" width="${size}" height="${size}" rx="16" fill="#c7d2fe" stroke="#1d4ed8" stroke-width="4"></rect>
+              <text class="diagram-label" x="150" y="50">a = ${formatLength(data.base.a)} ${currentUnit}</text>`;
+          },
+          summary: (res, unit) => `Area = ${formatNumber(res.area)} ${unit}²`
+        },
+        rectangle: {
+          fields: [
+            { name: 'l', label: 'Length', min: 1, max: 120, value: 12 },
+            { name: 'b', label: 'Breadth', min: 1, max: 120, value: 8 }
+          ],
+          compute: ({ l, b }) => ({ area: l * b }),
+          draw: (data) => {
+            return `<rect x="50" y="80" width="200" height="120" fill="#fde68a" stroke="#f59e0b" stroke-width="4"></rect>
+              <text class="diagram-label" x="150" y="70">l = ${formatLength(data.base.l)} ${currentUnit}</text>
+              <text class="diagram-label" x="260" y="150" transform="rotate(90,260,150)">b = ${formatLength(data.base.b)} ${currentUnit}</text>`;
+          },
+          summary: (res, unit) => `Area = ${formatNumber(res.area)} ${unit}²`
+        },
+        triangle: {
+          fields: [
+            { name: 'b', label: 'Base', min: 1, max: 120, value: 12 },
+            { name: 'h', label: 'Height', min: 1, max: 120, value: 7 },
+            { name: 'a', label: 'Side a', min: 1, max: 120, value: 10 },
+            { name: 'c', label: 'Side c', min: 1, max: 120, value: 9 }
+          ],
+          compute: ({ a, b, c, h }) => {
+            const area = 0.5 * b * h;
+            const s = (a + b + c) / 2;
+            const heron = Math.sqrt(Math.max(s * (s - a) * (s - b) * (s - c), 0));
+            return { area, heron, s };
+          },
+          draw: (data) => {
+            const height = clamp(data.base.h * 4, 40, 200);
+            return `<polygon points="40,220 260,220 150,${220 - height}" fill="#bbf7d0" stroke="#16a34a" stroke-width="4"></polygon>
+              <line x1="150" y1="${220 - height}" x2="150" y2="220" stroke="#047857" stroke-dasharray="6"></line>
+              <text class="diagram-label" x="120" y="235">b = ${formatLength(data.base.b)} ${currentUnit}</text>
+              <text class="diagram-label" x="160" y="${220 - height - 10}">h = ${formatLength(data.base.h)} ${currentUnit}</text>`;
+          },
+          summary: (res, unit) => `Area = ${formatNumber(res.area)} ${unit}² | Heron = ${formatNumber(res.heron)} ${unit}²`
+        },
+        parallelogram: {
+          fields: [
+            { name: 'b', label: 'Base', min: 1, max: 120, value: 18 },
+            { name: 'h', label: 'Height', min: 1, max: 120, value: 6 }
+          ],
+          compute: ({ b, h }) => ({ area: b * h }),
+          draw: (data) => {
+            const height = clamp(data.base.h * 5, 40, 220);
+            return `<polygon points="60,220 240,220 210,140 30,140" fill="#fde68a" stroke="#f59e0b" stroke-width="4"></polygon>
+              <line x1="60" y1="220" x2="60" y2="${220 - height}" stroke="#f97316" stroke-dasharray="6"></line>
+              <text class="diagram-label" x="140" y="235">b = ${formatLength(data.base.b)} ${currentUnit}</text>
+              <text class="diagram-label" x="70" y="${220 - height - 10}">h = ${formatLength(data.base.h)} ${currentUnit}</text>`;
+          },
+          summary: (res, unit) => `Area = ${formatNumber(res.area)} ${unit}²`
+        },
+        trapezium: {
+          fields: [
+            { name: 'a', label: 'Parallel side a', min: 1, max: 120, value: 10 },
+            { name: 'b', label: 'Parallel side b', min: 1, max: 120, value: 6 },
+            { name: 'h', label: 'Height', min: 1, max: 120, value: 5 }
+          ],
+          compute: ({ a, b, h }) => ({ area: 0.5 * (a + b) * h }),
+          draw: (data) => {
+            const height = clamp(data.base.h * 5, 40, 220);
+            return `<polygon points="70,220 240,220 210,140 50,140" fill="#e9d5ff" stroke="#7c3aed" stroke-width="4"></polygon>
+              <line x1="70" y1="220" x2="70" y2="${220 - height}" stroke="#7c3aed" stroke-dasharray="6"></line>
+              <text class="diagram-label" x="120" y="235">a = ${formatLength(data.base.a)} ${currentUnit}</text>
+              <text class="diagram-label" x="210" y="150">b = ${formatLength(data.base.b)} ${currentUnit}</text>
+              <text class="diagram-label" x="80" y="${220 - height - 10}">h = ${formatLength(data.base.h)} ${currentUnit}</text>`;
+          },
+          summary: (res, unit) => `Area = ${formatNumber(res.area)} ${unit}²`
+        },
+        circle: {
+          fields: [{ name: 'r', label: 'Radius', min: 1, max: 80, value: 7 }],
+          compute: ({ r }) => ({ area: PI * r * r, circumference: 2 * PI * r }),
+          draw: (data) => {
+            return `<circle cx="150" cy="130" r="90" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="4"></circle>
+              <line x1="150" y1="130" x2="240" y2="130" stroke="#1d4ed8" stroke-width="4"></line>
+              <text class="diagram-label" x="195" y="120">r = ${formatLength(data.base.r)} ${currentUnit}</text>`;
+          },
+          summary: (res, unit) => `Area = ${formatNumber(res.area)} ${unit}² | Circumference = ${formatNumber(res.circumference)} ${unit}`
+        },
+        cube: {
+          fields: [{ name: 'a', label: 'Edge', min: 1, max: 40, value: 6 }],
+          compute: ({ a }) => ({ tsa: 6 * a * a, lsa: 4 * a * a, volume: a ** 3 }),
+          draw: (data) => {
+            return `<rect x="80" y="80" width="120" height="120" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="4"></rect>
+              <rect x="110" y="50" width="120" height="120" fill="rgba(59,130,246,0.25)" stroke="#1d4ed8" stroke-width="4"></rect>
+              <line x1="80" y1="80" x2="110" y2="50" stroke="#1d4ed8" stroke-width="4"></line>
+              <line x1="200" y1="80" x2="230" y2="50" stroke="#1d4ed8" stroke-width="4"></line>
+              <line x1="80" y1="200" x2="110" y2="170" stroke="#1d4ed8" stroke-width="4"></line>
+              <line x1="200" y1="200" x2="230" y2="170" stroke="#1d4ed8" stroke-width="4"></line>
+              <text class="diagram-label" x="90" y="75">a = ${formatLength(data.base.a)} ${currentUnit}</text>`;
+          },
+          summary: (res, unit) => `TSA = ${formatNumber(res.tsa)} ${unit}² | LSA = ${formatNumber(res.lsa)} ${unit}² | V = ${formatNumber(res.volume)} ${unit}³`
+        },
+        cuboid: {
+          fields: [
+            { name: 'l', label: 'Length', min: 1, max: 80, value: 10 },
+            { name: 'b', label: 'Breadth', min: 1, max: 80, value: 8 },
+            { name: 'h', label: 'Height', min: 1, max: 80, value: 6 }
+          ],
+          compute: ({ l, b, h }) => ({ tsa: 2 * (l * b + b * h + h * l), lsa: 2 * h * (l + b), volume: l * b * h }),
+          draw: (data) => {
+            return `<path d="M80 80 L200 80 L240 120 L120 120 Z" fill="#c7d2fe" stroke="#1d4ed8" stroke-width="3"></path>
+              <path d="M120 120 L120 220 L240 220 L240 120 Z" fill="rgba(59,130,246,0.25)" stroke="#1d4ed8" stroke-width="3"></path>
+              <path d="M80 80 L80 180 L120 220" fill="none" stroke="#1d4ed8" stroke-width="3"></path>
+              <text class="diagram-label" x="140" y="70">l = ${formatLength(data.base.l)} ${currentUnit}</text>
+              <text class="diagram-label" x="250" y="160" transform="rotate(90,250,160)">h = ${formatLength(data.base.h)} ${currentUnit}</text>
+              <text class="diagram-label" x="210" y="110">b = ${formatLength(data.base.b)} ${currentUnit}</text>`;
+          },
+          summary: (res, unit) => `TSA = ${formatNumber(res.tsa)} ${unit}² | LSA = ${formatNumber(res.lsa)} ${unit}² | V = ${formatNumber(res.volume)} ${unit}³`
+        },
+        cylinder: {
+          fields: [
+            { name: 'r', label: 'Radius', min: 1, max: 60, value: 6 },
+            { name: 'h', label: 'Height', min: 1, max: 120, value: 10 }
+          ],
+          compute: ({ r, h }) => ({ csa: 2 * PI * r * h, tsa: 2 * PI * r * h + 2 * PI * r * r, volume: PI * r * r * h }),
+          draw: (data) => {
+            return `<ellipse cx="150" cy="70" rx="70" ry="30" fill="#c7d2fe" stroke="#1d4ed8" stroke-width="3"></ellipse>
+              <rect x="80" y="70" width="140" height="140" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="3"></rect>
+              <ellipse cx="150" cy="210" rx="70" ry="30" fill="#93c5fd" stroke="#1d4ed8" stroke-width="3"></ellipse>
+              <text class="diagram-label" x="150" y="65">r = ${formatLength(data.base.r)} ${currentUnit}</text>
+              <text class="diagram-label" x="230" y="150" transform="rotate(90,230,150)">h = ${formatLength(data.base.h)} ${currentUnit}</text>`;
+          },
+          summary: (res, unit) => `CSA = ${formatNumber(res.csa)} ${unit}² | TSA = ${formatNumber(res.tsa)} ${unit}² | V = ${formatNumber(res.volume)} ${unit}³`
+        }
+      };
+
+      const renderControls = (shape) => {
+        const config = shapeConfigs[shape];
+        controls.innerHTML = '';
+        config.fields.forEach((field) => {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'control-group';
+          const id = `field-${shape}-${field.name}`;
+          const baseValue = valueStore[field.name] ?? field.value;
+          const displayValue = currentUnit === 'cm' ? baseValue : baseValue * CM_TO_M;
+          const min = currentUnit === 'cm' ? field.min : field.min * CM_TO_M;
+          const max = currentUnit === 'cm' ? field.max : field.max * CM_TO_M;
+          const step = currentUnit === 'cm' ? 0.5 : 0.01;
+          wrapper.innerHTML = `
+            <label for="${id}">${field.label} (${currentUnit})</label>
+            <input type="range" id="${id}" min="${min}" max="${max}" value="${displayValue}" step="${step}">
+            <input type="number" id="${id}-number" min="${min}" max="${max}" value="${displayValue}" step="${step}">
+          `;
+          controls.appendChild(wrapper);
+          const range = wrapper.querySelector('input[type="range"]');
+          const numberInput = wrapper.querySelector('input[type="number"]');
+          const syncValue = (displayVal) => {
+            const baseVal = currentUnit === 'cm' ? Number(displayVal) : Number(displayVal) * M_TO_CM;
+            const clampedBase = clamp(baseVal, field.min, field.max);
+            valueStore[field.name] = clampedBase;
+            const refreshedDisplay = currentUnit === 'cm' ? clampedBase : clampedBase * CM_TO_M;
+            range.value = refreshedDisplay;
+            numberInput.value = refreshedDisplay;
+            updateDiagram();
+          };
+          range.addEventListener('input', (e) => syncValue(e.target.value));
+          numberInput.addEventListener('input', (e) => {
+            const val = Number(e.target.value);
+            if (!Number.isFinite(val)) {
+              errorOutput.textContent = 'Arre, number sahi daalo!';
+              return;
+            }
+            errorOutput.textContent = '';
+            syncValue(val);
+          });
+        });
+      };
+
+      const updateDiagram = () => {
+        const config = shapeConfigs[currentShape];
+        if (!config) return;
+        const displayValues = {};
+        config.fields.forEach((field) => {
+          const baseValue = valueStore[field.name] ?? field.value;
+          displayValues[field.name] = currentUnit === 'cm' ? baseValue : baseValue * CM_TO_M;
+        });
+        errorOutput.textContent = '';
+        const results = config.compute(displayValues);
+        svgGroup.innerHTML = config.draw({ base: valueStore, display: displayValues });
+        output.textContent = config.summary(results, currentUnit);
+        speak(`${currentShape} ka result ${output.textContent}`);
+      };
+
+      shapeSelect.addEventListener('change', (e) => {
+        currentShape = e.target.value;
+        setDefaults(currentShape);
+        renderControls(currentShape);
+        updateDiagram();
+      });
+
+      unitRadios.forEach((radio) => {
+        radio.addEventListener('change', (e) => {
+          currentUnit = e.target.value;
+          renderControls(currentShape);
+          updateDiagram();
+        });
+      });
+
+      const init = () => {
+        setDefaults(currentShape);
+        renderControls(currentShape);
+        updateDiagram();
+      };
+
+      return { init, updateDiagram };
+    })();
+
+    const animationModule = (() => {
+      const circleBtn = document.getElementById('toggleCircleAnim');
+      const netBtn = document.getElementById('toggleNet');
+      const cubeBtn = document.getElementById('toggleCubeFaces');
+      const pizzaSlices = document.querySelectorAll('.pizza-slice');
+      const cylinderNet = document.getElementById('cylinderNet');
+      const cubeFaces = document.querySelectorAll('#cubeNet .face');
+
+      let circlePlaying = true;
+      circleBtn?.addEventListener('click', () => {
+        circlePlaying = !circlePlaying;
+        pizzaSlices.forEach((slice) => slice.style.animationPlayState = circlePlaying ? 'running' : 'paused');
+        circleBtn.textContent = circlePlaying ? 'Pause karo' : 'Play karo';
+      });
+
+      netBtn?.addEventListener('click', () => {
+        cylinderNet.classList.toggle('unrolled');
+        netBtn.textContent = cylinderNet.classList.contains('unrolled') ? 'Roll back' : 'Unroll karo';
+      });
+
+      cubeBtn?.addEventListener('click', () => {
+        cubeFaces.forEach((face, index) => {
+          face.style.fill = face.style.fill ? '' : `hsla(${index * 60}, 70%, 70%, 0.6)`;
+        });
+      });
+    })();
+
+    const solverModule = (() => {
+      const problems = [
+        {
+          id: 'square-1',
+          title: 'Square garden area',
+          given: 'Square side = 12 cm',
+          formula: 'A = a²',
+          explanation: 'Square ka area side × side hota hai',
+          steps: ['Given: a = 12 cm', 'Formula: A = a²', 'Calculation: 12 × 12 = 144 cm²'],
+          hint: 'Side ko do baar multiply karo, bus.',
+        },
+        {
+          id: 'triangle-1',
+          title: 'Triangle with Heron',
+          given: 'Triangle sides 13 cm, 14 cm, 15 cm',
+          formula: 'Heron formula',
+          explanation: 'Semi-perimeter s = (a + b + c)/2',
+          steps: ['Given: a=13, b=14, c=15', 's = (13+14+15)/2 = 21', 'A = √[21×8×7×6] = 84 cm²'],
+          hint: 'Pehle s nikalo, phir Heron apply karo.'
+        },
+        {
+          id: 'cylinder-1',
+          title: 'Cylinder paint',
+          given: 'Radius 3 cm, height 10 cm',
+          formula: 'CSA = 2πrh',
+          explanation: 'Curved surface area use karo jab top-bottom paint nahi karna',
+          steps: ['Given: r=3 cm, h=10 cm', 'CSA = 2 × π × 3 × 10', '≈ 188.4 cm²'],
+          hint: 'π ≈ 3.14 use karo.'
+        },
+        {
+          id: 'trapezium-1',
+          title: 'Trapezium field',
+          given: 'Parallel sides 10 m & 6 m, height 5 m',
+          formula: 'A = ½(a+b)h',
+          explanation: 'Parallel sides ka average × height',
+          steps: ['Given values plug karo', 'Average = (10+6)/2 = 8', 'Area = 8 × 5 = 40 m²'],
+          hint: 'Average ka matlab add then divide by 2.'
+        }
+      ];
+
+      const problemSelect = document.getElementById('problemSelect');
+      const showHint = document.getElementById('showHint');
+      const nextStep = document.getElementById('nextStep');
+      const resetSteps = document.getElementById('resetSteps');
+      const hintOutput = document.getElementById('hintOutput');
+      const stepEls = [
+        document.getElementById('givenInfo'),
+        document.getElementById('formulaInfo'),
+        document.getElementById('calculationInfo')
+      ];
+      let currentIndex = 0;
+      let currentProblem = problems[0];
+
+      const populateSelect = () => {
+        problems.forEach((prob) => {
+          const option = document.createElement('option');
+          option.value = prob.id;
+          option.textContent = prob.title;
+          problemSelect.appendChild(option);
+        });
+        problemSelect.value = problems[0].id;
+        loadProblem(problems[0].id);
+      };
+
+      const loadProblem = (id) => {
+        currentProblem = problems.find((prob) => prob.id === id) || problems[0];
+        currentIndex = 0;
+        stepEls[0].textContent = currentProblem.given;
+        stepEls[1].textContent = 'Formula yahan show hoga.';
+        stepEls[2].textContent = 'Calculation breakdown.';
+        hintOutput.textContent = '';
+        speak(`${currentProblem.title} select hua. Given: ${currentProblem.given}`);
+      };
+
+      const revealNext = () => {
+        if (!currentProblem) return;
+        if (currentIndex === 0) {
+          stepEls[1].textContent = `${currentProblem.formula} — ${currentProblem.explanation}`;
+          speak(`Formula: ${currentProblem.formula}`);
+        } else if (currentIndex === 1) {
+          stepEls[2].textContent = currentProblem.steps[2] || 'Steps complete!';
+          speak(`Calculation: ${currentProblem.steps[2]}`);
+        } else {
+          hintOutput.textContent = 'All steps ho chuke!';
+        }
+        currentIndex += 1;
+      };
+
+      showHint.addEventListener('click', () => {
+        hintOutput.textContent = currentProblem.hint;
+        speak(currentProblem.hint);
+      });
+
+      nextStep.addEventListener('click', revealNext);
+      resetSteps.addEventListener('click', () => loadProblem(problemSelect.value));
+      problemSelect.addEventListener('change', (e) => loadProblem(e.target.value));
+
+      document.addEventListener('keydown', (event) => {
+        if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') return;
+        if (event.key.toLowerCase() === 'h') showHint.click();
+        if (event.key.toLowerCase() === 'n') nextStep.click();
+        if (event.key.toLowerCase() === 'r') resetSteps.click();
+      });
+
+      return { populateSelect };
+    })();
+
+    const practiceGenerator = (() => {
+      const questionTemplates = {
+        easy: [
+          () => ({ text: 'Square side 9 cm, area?', answer: 81, unit: 'cm²' }),
+          () => ({ text: 'Rectangle 5m × 3m ka area?', answer: 15, unit: 'm²' })
+        ],
+        medium: [
+          () => ({ text: 'Triangle base 18 cm, height 9 cm', answer: 81, unit: 'cm²' }),
+          () => ({ text: 'Cylinder radius 3 cm, height 10 cm volume?', answer: parseFloat((PI * 9 * 10).toFixed(2)), unit: 'cm³' })
+        ],
+        hard: [
+          () => ({ text: 'Trapezium sides 14m, 10m, height 6m area?', answer: 72, unit: 'm²' }),
+          () => ({ text: 'Cube side 7cm TSA?', answer: 294, unit: 'cm²' })
+        ]
+      };
+
+      const difficultySelect = document.getElementById('difficultySelect');
+      const timerSelect = document.getElementById('timerSelect');
+      const generateBtn = document.getElementById('generateProblem');
+      const markSolved = document.getElementById('markSolved');
+      const skipProblem = document.getElementById('skipProblem');
+      const problemDisplay = document.getElementById('randomProblem');
+      const timerDisplay = document.getElementById('timerDisplay');
+      const streakCount = document.getElementById('streakCount');
+      const accuracyPercent = document.getElementById('accuracyPercent');
+      const skillLevel = document.getElementById('skillLevel');
+      const bestTimeEl = document.getElementById('bestTime');
+
+      const storageKey = 'aimentor-practice';
+      let currentProblem = null;
+      let streak = 0;
+      let correct = 0;
+      let attempted = 0;
+      let timerId = null;
+      let timeRemaining = 0;
+      let bestTime = null;
+      let problemStart = Date.now();
+
+      const levels = ['Rising Star', 'Formula Ninja', 'Mensuration Master'];
+
+      const loadStats = () => {
+        try {
+          const saved = JSON.parse(localStorage.getItem(storageKey));
+          if (saved) {
+            streak = saved.streak || 0;
+            correct = saved.correct || 0;
+            attempted = saved.attempted || 0;
+            bestTime = Number(saved.bestTime) || null;
+          }
+        } catch (error) {
+          console.warn(error);
+        }
+        updateStats();
+      };
+
+      const saveStats = () => {
+        try {
+          localStorage.setItem(storageKey, JSON.stringify({ streak, correct, attempted, bestTime }));
+        } catch (error) {
+          console.warn(error);
+        }
+      };
+
+      const updateStats = () => {
+        streakCount.textContent = streak;
+        const accuracy = attempted ? Math.round((correct / attempted) * 100) : 0;
+        accuracyPercent.textContent = `${accuracy}%`;
+        const levelIndex = accuracy > 85 ? 2 : accuracy > 60 ? 1 : 0;
+        skillLevel.textContent = levels[levelIndex];
+        bestTimeEl.textContent = bestTime ? formatNumber(bestTime) : '--';
+      };
+
+      const startTimer = (seconds) => {
+        clearInterval(timerId);
+        if (seconds === 'off') {
+          timerDisplay.textContent = '';
+          timerId = null;
+          return;
+        }
+        timeRemaining = Number(seconds);
+        timerDisplay.textContent = `Time left: ${timeRemaining}s`;
+        timerId = setInterval(() => {
+          timeRemaining -= 1;
+          timerDisplay.textContent = `Time left: ${timeRemaining}s`;
+          if (timeRemaining <= 0) {
+            clearInterval(timerId);
+            timerId = null;
+            streak = 0;
+            attempted += 1;
+            updateStats();
+            saveStats();
+            problemDisplay.textContent = 'Time up! Next problem try karo.';
+          }
+        }, 1000);
+      };
+
+      const generate = () => {
+        const level = difficultySelect.value;
+        const templateList = questionTemplates[level];
+        const template = templateList[Math.floor(Math.random() * templateList.length)];
+        currentProblem = template();
+        problemDisplay.textContent = `${currentProblem.text} (Answer ≈ ${currentProblem.answer} ${currentProblem.unit})`;
+        speak(problemDisplay.textContent);
+        startTimer(timerSelect.value);
+        problemStart = Date.now();
+      };
+
+      generateBtn.addEventListener('click', () => {
+        generate();
+      });
+
+      markSolved.addEventListener('click', () => {
+        streak += 1;
+        correct += 1;
+        attempted += 1;
+        const timeTaken = (Date.now() - problemStart) / 1000;
+        if (!bestTime || timeTaken < bestTime) {
+          bestTime = timeTaken;
+        }
+        updateStats();
+        saveStats();
+        unlockBadge('badgePractice');
+        problemDisplay.textContent = 'Great! Next problem generate karo.';
+        timerDisplay.textContent = '';
+        clearInterval(timerId);
+        timerId = null;
+      });
+
+      skipProblem.addEventListener('click', () => {
+        streak = 0;
+        attempted += 1;
+        updateStats();
+        saveStats();
+        problemDisplay.textContent = 'No stress, naya problem ready!';
+        timerDisplay.textContent = '';
+        clearInterval(timerId);
+        timerId = null;
+      });
+
+      return { loadStats, generate };
+    })();
+
+    const quizModule = (() => {
+      const quizData = [
+        {
+          question: 'Rectangle 12 cm × 8 cm ka area?',
+          options: ['96 cm²', '100 cm²', '20 cm²', '120 cm²'],
+          answer: 0,
+          explain: '12 × 8 = 96 cm²'
+        },
+        {
+          question: 'Cylinder ka volume formula?',
+          options: ['πr²h', '2πrh', '4πr²', 'lbh'],
+          answer: 0,
+          explain: 'Volume = πr²h'
+        },
+        {
+          question: 'Triangle ke liye Heron formula mein s kya hota?',
+          options: ['Semi-perimeter', 'Height', 'Base', 'Radius'],
+          answer: 0,
+          explain: 's = (a+b+c)/2'
+        },
+        {
+          question: 'Cube ke TSA ke liye formula?',
+          options: ['6a²', '4a³', '2ab', 'πr²'],
+          answer: 0,
+          explain: 'Total surface area = 6a²'
+        }
+      ];
+
+      const quizQuestion = document.getElementById('quizQuestion');
+      const quizOptions = document.getElementById('quizOptions');
+      const nextQuiz = document.getElementById('nextQuiz');
+      const startDaily = document.getElementById('startDaily');
+      const dailyScoreEl = document.getElementById('dailyScore');
+      const dailyStreakEl = document.getElementById('dailyStreak');
+      const dailyStatus = document.getElementById('dailyStatus');
+
+      const storageKey = 'aimentor-daily';
+      let currentIndex = 0;
+      let dailyStreak = 0;
+      let lastScore = 0;
+
+      const loadDaily = () => {
+        try {
+          const saved = JSON.parse(localStorage.getItem(storageKey));
+          if (saved) {
+            dailyStreak = saved.dailyStreak || 0;
+            lastScore = saved.lastScore || 0;
+          }
+        } catch (error) {
+          console.warn(error);
+        }
+        dailyScoreEl.textContent = lastScore;
+        dailyStreakEl.textContent = dailyStreak;
+      };
+
+      let currentQuestion = quizData[0];
+
+      const loadQuestion = () => {
+        currentQuestion = quizData[Math.floor(Math.random() * quizData.length)];
+        quizQuestion.textContent = currentQuestion.question;
+        quizOptions.innerHTML = '';
+        currentQuestion.options.forEach((option, index) => {
+          const btn = document.createElement('button');
+          btn.textContent = option;
+          btn.addEventListener('click', () => {
+            const correct = index === currentQuestion.answer;
+            btn.classList.add(correct ? 'correct' : 'incorrect');
+            btn.setAttribute('aria-pressed', 'true');
+            speak(correct ? 'Bilkul sahi!' : 'Thoda aur practice karo.');
+            const explain = document.createElement('p');
+            explain.textContent = correct ? `Why: ${currentQuestion.explain}` : `Correct: ${currentQuestion.options[currentQuestion.answer]} — ${currentQuestion.explain}`;
+            quizOptions.appendChild(explain);
+          });
+          quizOptions.appendChild(btn);
+        });
+      };
+
+      const startChallenge = () => {
+        let score = 0;
+        const questions = [...quizData].sort(() => Math.random() - 0.5).slice(0, 5);
+        let questionIndex = 0;
+        dailyStatus.textContent = '';
+
+        const ask = () => {
+          const q = questions[questionIndex];
+          quizQuestion.textContent = `Daily Q${questionIndex + 1}: ${q.question}`;
+          quizOptions.innerHTML = '';
+          q.options.forEach((option, index) => {
+            const btn = document.createElement('button');
+            btn.textContent = option;
+            btn.addEventListener('click', () => {
+              const correct = index === q.answer;
+              if (correct) score += 1;
+              btn.classList.add(correct ? 'correct' : 'incorrect');
+              const solution = document.createElement('p');
+              solution.textContent = `Solution: ${q.explain}`;
+              quizOptions.appendChild(solution);
+              questionIndex += 1;
+              if (questionIndex < questions.length) {
+                setTimeout(ask, 1200);
+              } else {
+                finish();
+              }
+            });
+            quizOptions.appendChild(btn);
+          });
+        };
+
+        const finish = () => {
+          lastScore = score;
+          if (score >= 4) {
+            dailyStreak += 1;
+            unlockBadge('badgeDaily');
+            if (dailyStreak % 7 === 0) {
+              unlockBadge('badgeEaster');
+            }
+            dailyStatus.textContent = `Shabash! Score ${score}/5. Badge unlock hua.`;
+          } else {
+            dailyStreak = 0;
+            dailyStatus.textContent = `Score ${score}/5. Kal fir try karo.`;
+          }
+          dailyScoreEl.textContent = lastScore;
+          dailyStreakEl.textContent = dailyStreak;
+          try {
+            localStorage.setItem(storageKey, JSON.stringify({ lastScore, dailyStreak }));
+          } catch (error) {
+            console.warn(error);
+          }
+          drawCertificate();
+        };
+
+        ask();
+      };
+
+      nextQuiz.addEventListener('click', loadQuestion);
+      startDaily.addEventListener('click', startChallenge);
+
+      return { loadQuestion, loadDaily };
+    })();
+
+    const applicationsModule = (() => {
+      const paintBtn = document.getElementById('calcPaint');
+      const tankInputs = {
+        radius: document.getElementById('tankRadius'),
+        height: document.getElementById('tankHeight'),
+        fill: document.getElementById('tankFill')
+      };
+      const labelBtn = document.getElementById('calcLabel');
+      const packBtn = document.getElementById('calcPacking');
+
+      paintBtn.addEventListener('click', () => {
+        const L = Number(document.getElementById('roomLength').value);
+        const B = Number(document.getElementById('roomBreadth').value);
+        const H = Number(document.getElementById('roomHeight').value);
+        const includeDoor = document.getElementById('includeDoor').checked;
+        const includeWindow = document.getElementById('includeWindow').checked;
+
+        if ([L, B, H].some((v) => !Number.isFinite(v) || v <= 0)) {
+          document.getElementById('paintResult').textContent = 'Values positive hone chahiye!';
+          return;
+        }
+
+        const wallArea = 2 * H * (L + B);
+        const ceiling = L * B;
+        let total = wallArea + ceiling;
+        if (includeDoor) total -= 2 * 0.9;
+        if (includeWindow) total -= 1.2 * 1.2;
+        document.getElementById('paintResult').textContent = `Paint area ≈ ${formatNumber(total)} m² (1 litre ≈ 10 m² → ${formatNumber(total / 10)} litres).`;
+        speak('Room paint area calculated.');
+      });
+
+      const updateTank = () => {
+        const r = Number(tankInputs.radius.value);
+        const h = Number(tankInputs.height.value);
+        const fillPercent = Number(tankInputs.fill.value);
+        const volume = PI * r * r * h;
+        const filled = volume * (fillPercent / 100);
+        const litres = filled * 1000; // m³ to litres
+        const message = `Total volume ≈ ${formatNumber(volume)} m³ (${formatNumber(volume * 1000)} L). Filled: ${formatNumber(litres)} L (${fillPercent}%).`;
+        document.getElementById('tankResult').textContent = message;
+        if (fillPercent > 95) {
+          document.getElementById('tankResult').textContent += ' ⚠️ Overflow alert!';
+        }
+      };
+
+      Object.values(tankInputs).forEach((input) => input.addEventListener('input', updateTank));
+      updateTank();
+
+      labelBtn.addEventListener('click', () => {
+        const r = Number(document.getElementById('bottleRadius').value);
+        const h = Number(document.getElementById('labelHeight').value);
+        if (r <= 0 || h <= 0) {
+          document.getElementById('labelResult').textContent = 'Positive values chahiye!';
+          return;
+        }
+        const wrap = 2 * PI * r * h;
+        const caps = PI * r * r;
+        document.getElementById('labelResult').textContent = `Label area = ${formatNumber(wrap)} cm², top/bottom cover = ${formatNumber(2 * caps)} cm².`;
+      });
+
+      packBtn.addEventListener('click', () => {
+        const L = Number(document.getElementById('packL').value);
+        const B = Number(document.getElementById('packB').value);
+        const H = Number(document.getElementById('packH').value);
+        const side = Number(document.getElementById('cubeSide').value);
+        if ([L, B, H, side].some((v) => v <= 0)) {
+          document.getElementById('packingResult').textContent = 'Sab values positive rakho!';
+          return;
+        }
+        const fitL = Math.floor(L / side);
+        const fitB = Math.floor(B / side);
+        const fitH = Math.floor(H / side);
+        const total = fitL * fitB * fitH;
+        const leftover = L * B * H - total * Math.pow(side, 3);
+        document.getElementById('packingResult').textContent = `Fit hone wale cubes: ${total}. Leftover space ≈ ${formatNumber(leftover)} cm³.`;
+      });
+    })();
+
+    const copyModule = (() => {
+      const btn = document.getElementById('copyTemplate');
+      btn.addEventListener('click', async () => {
+        const text = document.getElementById('doubtTemplate').value;
+        try {
+          await navigator.clipboard.writeText(text);
+          document.getElementById('copyStatus').textContent = 'Copied! WhatsApp pe paste karo.';
+        } catch (error) {
+          document.getElementById('copyStatus').textContent = 'Clipboard unavailable. Khud select karke copy karo.';
+        }
+      });
+    })();
+
+    const profileModule = (() => {
+      const nameInput = document.getElementById('studentName');
+      const classInput = document.getElementById('studentClass');
+      const saveBtn = document.getElementById('saveProfile');
+      const resetBtn = document.getElementById('resetProgress');
+      const storageKey = 'aimentor-profile';
+
+      const load = () => {
+        try {
+          const saved = JSON.parse(localStorage.getItem(storageKey));
+          if (saved) {
+            nameInput.value = saved.name || '';
+            classInput.value = saved.className || '';
+          }
+        } catch (error) {
+          console.warn(error);
+        }
+      };
+
+      const save = () => {
+        try {
+          localStorage.setItem(storageKey, JSON.stringify({ name: nameInput.value.trim(), className: classInput.value.trim() }));
+          unlockBadge('badgePractice');
+        } catch (error) {
+          console.warn(error);
+        }
+        drawCertificate();
+      };
+
+      const reset = () => {
+        localStorage.clear();
+        window.location.reload();
+      };
+
+      saveBtn.addEventListener('click', save);
+      resetBtn.addEventListener('click', reset);
+
+      return { load };
+    })();
+
+    const badgeModule = (() => {
+      const badges = {
+        badgePractice: document.getElementById('badgePractice'),
+        badgeDaily: document.getElementById('badgeDaily'),
+        badgeAllStar: document.getElementById('badgeAllStar'),
+        badgeEaster: document.getElementById('badgeEaster')
+      };
+      const storageKey = 'aimentor-badges';
+      let badgeState = {};
+
+      const load = () => {
+        try {
+          const saved = JSON.parse(localStorage.getItem(storageKey));
+          if (saved) badgeState = saved;
+        } catch (error) {
+          console.warn(error);
+        }
+        Object.entries(badges).forEach(([key, el]) => {
+          if (badgeState[key]) el.style.background = 'rgba(34,197,94,0.2)';
+        });
+      };
+
+      const save = () => {
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(badgeState));
+        } catch (error) {
+          console.warn(error);
+        }
+      };
+
+      window.unlockBadge = (id) => {
+        badgeState[id] = true;
+        const el = badges[id];
+        if (el) {
+          el.style.background = 'rgba(34,197,94,0.2)';
+          el.style.borderColor = '#16a34a';
+        }
+        save();
+      };
+
+      return { load };
+    })();
+
+    const certificateModule = (() => {
+      const canvas = document.getElementById('certificateCanvas');
+      const exportBtn = document.getElementById('exportCertificate');
+      const ctx = canvas.getContext('2d');
+
+      const draw = () => {
+        const name = document.getElementById('studentName').value || 'Student';
+        const className = document.getElementById('studentClass').value || 'Class 9';
+        const date = new Date().toLocaleDateString();
+        const bestScore = document.getElementById('dailyScore').textContent || '0';
+
+        ctx.fillStyle = '#fffef5';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = '#3956d3';
+        ctx.lineWidth = 6;
+        ctx.strokeRect(20, 20, canvas.width - 40, canvas.height - 40);
+
+        ctx.fillStyle = '#1f2933';
+        ctx.font = '36px "Baloo 2", sans-serif';
+        ctx.fillText('AI Mentor Sir — Mensuration Mastery', 60, 120);
+
+        ctx.font = '28px Inter, sans-serif';
+        ctx.fillText(`Awarded to: ${name}`, 60, 200);
+        ctx.fillText(`Class: ${className}`, 60, 250);
+        ctx.fillText(`Daily Challenge Score: ${bestScore}/5`, 60, 300);
+        ctx.fillText(`Date: ${date}`, 60, 350);
+
+        ctx.font = '22px Inter, sans-serif';
+        ctx.fillText('Keep shining! Mensuration champion in the making.', 60, 420);
+      };
+
+      exportBtn.addEventListener('click', () => {
+        draw();
+        const link = document.createElement('a');
+        link.download = 'AI-Mentor-Sir-Certificate.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      });
+
+      return { draw };
+    })();
+
+    const helperModule = (() => {
+      const startPractice = document.getElementById('startPractice');
+      const printFormula = document.getElementById('printFormula');
+      const dailyChallenge = document.getElementById('dailyChallenge');
+      const printPlan = document.getElementById('printPlan');
+
+      startPractice.addEventListener('click', () => {
+        document.getElementById('practice').scrollIntoView({ behavior: 'smooth' });
+        unlockBadge('badgeAllStar');
+      });
+
+      dailyChallenge.addEventListener('click', () => {
+        document.getElementById('quizzes').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      printFormula.addEventListener('click', () => {
+        window.print();
+      });
+
+      printPlan.addEventListener('click', () => {
+        window.print();
+      });
+    })();
+
+    const lastUpdatedEl = document.getElementById('lastUpdated');
+    lastUpdatedEl.textContent = new Date().toLocaleDateString();
+
+    const drawCertificate = () => certificateModule.draw();
+
+    document.addEventListener('DOMContentLoaded', () => {
+      preferences.loadPreferences();
+      voiceAssist.load();
+      badgeModule.load();
+      profileModule.load();
+      diagramModule.init();
+      solverModule.populateSelect();
+      practiceGenerator.loadStats();
+      practiceGenerator.generate();
+      quizModule.loadQuestion();
+      quizModule.loadDaily();
+      drawCertificate();
+    });
+  </script>
+</body>
+</html>
